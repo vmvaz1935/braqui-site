@@ -11,3 +11,5 @@ Thumbs.db
 .idea/
 assets_legacy/
 index.legacy.html
+
+.vercel
