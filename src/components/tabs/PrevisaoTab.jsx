@@ -20,8 +20,13 @@ export default function PrevisaoTab() {
           Previsão de Recuperação
         </h2>
         <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>
-          Marcos típicos da Cirurgia Braqui. As datas variam conforme a técnica (alongamento agudo ou gradual) e a
-          resposta individual ao tratamento.
+          Estimativa de quando você poderá retomar atividades. Consulte sua cirurgiã para prazos específicos.
+        </p>
+        <p
+          className="mt-1"
+          style={{ color: 'var(--text-muted)', fontSize: '0.82rem' }}
+        >
+          *A liberação progressiva de calçados e atividades depende da consolidação óssea. Controle radiográfico no retorno.
         </p>
       </header>
 

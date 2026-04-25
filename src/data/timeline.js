@@ -1,63 +1,47 @@
 export const timeline = [
   {
-    period: 'Até o retorno (~7-14 dias)',
-    pills: ['Curativo intacto', 'Pé elevado', 'Sandália pós-operatória'],
+    period: 'Até o retorno (~2ª semana)',
+    pills: ['Curativo intacto', 'Sandália pós-operatória', 'Repouso com pé elevado'],
   },
   {
-    period: 'Semana 2-3',
+    period: 'Semana 2-4',
     pills: [
-      'Retirada dos pontos em consultório',
-      'Início da fisioterapia',
-      'Home office possível',
-      'Curativo simples e mais leve',
+      'Retirada dos pontos (em consultório)',
+      'Progressão de carga conforme avaliação',
+      'Início de fisioterapia',
     ],
   },
   {
     period: 'Semana 4-6',
     pills: [
-      'Carga progressiva conforme orientação',
-      'Mobilização ativa do dedo',
-      'Liberação de tarefas domésticas leves',
+      'Transição de sandália pós-operatória',
+      'Progressão da fisioterapia',
+      'Início do manejo da cicatriz (quando liberado)',
+      'Retorno a trabalho sedentário (quando apropriado)',
     ],
   },
   {
-    period: '2-3 meses',
-    pills: [
-      'Controle radiográfico de consolidação',
-      'Retirada de fios temporários (quando indicado)',
-      'Início do tênis largo',
-    ],
+    period: '2 meses',
+    pills: ['Atividade física de baixo impacto (com liberação)'],
   },
   {
-    period: '3-4 meses',
+    period: '3 meses',
     pills: [
-      'Tênis confortável de uso diário',
-      'Atividade física de baixo impacto (com liberação)',
-      'Sandália comum',
+      'Tênis e calçados mais confortáveis (se evolução adequada)',
+      'Liberação para atividade física de maior impacto (se evolução adequada)',
+      'Controle radiográfico',
     ],
   },
   {
     period: '6 meses',
-    pills: [
-      'Calçado fechado de uso regular',
-      'Salto baixo conforme avaliação',
-      'Atividade física de maior impacto (com liberação)',
-    ],
-  },
-  {
-    period: '6-12 meses',
-    pills: [
-      'Alta funcional',
-      'Cicatrizes maduras',
-      'Resultado final consolidado',
-    ],
+    pills: ['Alta médica'],
   },
 ];
 
 export const recoveryTimeTiles = [
-  { duration: '2-6 semanas', description: 'Cicatrização e início da fisioterapia' },
-  { duration: '3-6 meses', description: 'Calçado e atividade de baixo / médio impacto' },
-  { duration: '6-12 meses', description: 'Alta funcional completa' },
+  { duration: '2 meses', description: 'Atividade física de baixo impacto' },
+  { duration: '3 meses', description: 'Liberação de calçados e atividade de maior impacto' },
+  { duration: '6 meses', description: 'Alta médica' },
 ];
 
 export const risks = [

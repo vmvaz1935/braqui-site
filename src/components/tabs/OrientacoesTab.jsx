@@ -18,7 +18,7 @@ import {
 } from 'lucide-react';
 import Accordion from '../Accordion.jsx';
 import RichText from '../RichText.jsx';
-import { generalGuidelines, dailyActivities, warnings } from '../../data/guidelines.js';
+import { generalGuidelines, cicatrizMassage, dailyActivities, warnings } from '../../data/guidelines.js';
 import { faq, myths } from '../../data/faq.js';
 import {
   aboutCondition,
@@ -166,12 +166,54 @@ export default function OrientacoesTab() {
         <Accordion items={generalGuidelines} />
       </Card>
 
+      {/* Massagem da cicatriz */}
+      <Card>
+        <SectionTitle
+          icon={Sparkles}
+          title="Massagem da Cicatriz"
+          subtitle={cicatrizMassage.intro}
+        />
+        <ol className="space-y-2 mb-3">
+          {cicatrizMassage.steps.map((step, i) => (
+            <li
+              key={i}
+              className="rounded-xl p-3 flex gap-3"
+              style={{ background: 'var(--surface-soft)', border: '1px solid var(--stroke)' }}
+            >
+              <span
+                className="font-bold shrink-0 flex items-center justify-center"
+                style={{
+                  width: 28,
+                  height: 28,
+                  borderRadius: '50%',
+                  background: 'var(--primary)',
+                  color: '#fff',
+                  fontFamily: 'Poppins, Inter, sans-serif',
+                  fontSize: '0.85rem',
+                }}
+              >
+                {i + 1}
+              </span>
+              <span style={{ fontSize: '0.92rem', color: 'var(--text)', lineHeight: 1.6, display: 'flex', alignItems: 'center' }}>
+                {step}
+              </span>
+            </li>
+          ))}
+        </ol>
+        <p
+          className="italic"
+          style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.6 }}
+        >
+          {cicatrizMassage.note}
+        </p>
+      </Card>
+
       {/* AVD */}
       <Card>
         <SectionTitle
           icon={Activity}
           title="Atividades de Vida Diária"
-          subtitle="Como adaptar a rotina nas semanas e meses após a cirurgia"
+          subtitle="Como adaptar a rotina após a cirurgia"
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
           {dailyActivities.map((a, i) => (

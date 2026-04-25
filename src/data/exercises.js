@@ -1,7 +1,7 @@
 export const exerciseCategories = [
   {
-    id: 'mobilizacao-inicial',
-    title: 'Mobilização Inicial',
+    id: 'liberacao-mobilidade',
+    title: 'Liberação e Mobilidade',
     period: 'A PARTIR DAS PRIMEIRAS 48-72H — APENAS QUANDO LIBERADO PELA EQUIPE',
     color: 'sage',
     items: [
@@ -20,51 +20,61 @@ export const exerciseCategories = [
         description:
           'Movimentos rítmicos de abrir e fechar os dedos, ajudando no controle do edema e na prevenção de trombose.',
       },
+      {
+        name: 'Mobilização passiva do dedo operado',
+        description:
+          'A partir da 2ª–4ª semana, o fisioterapeuta movimenta o dedo operado suavemente em flexão e extensão, dentro do limite de conforto.',
+      },
     ],
   },
   {
     id: 'alongamentos',
     title: 'Alongamentos',
-    period: 'A PARTIR DA SEMANA 2 — INTEGRADOS À FISIOTERAPIA',
+    period: 'A PARTIR DA SEMANA 2-4 — INTEGRADOS À FISIOTERAPIA',
     color: 'blue',
     items: [
       {
-        name: 'Alongamento da cápsula MTF',
+        name: 'Alongamento de cadeia posterior sentado',
         description:
-          'Alongamento suave e progressivo da articulação metatarsofalângica do dedo operado, sob orientação do fisioterapeuta, para prevenir rigidez.',
+          'Com a perna estendida, puxar suavemente o pé em direção ao corpo com auxílio de uma faixa ou toalha, sem carga sobre o pé operado.',
+      },
+      {
+        name: 'Mobilidade de quadril, joelho e tornozelo sem carga',
+        description:
+          'Movimentos ativos e assistidos de toda a cadeia inferior, sentado ou deitado, sem transferência de peso para o pé operado.',
+      },
+      {
+        name: 'Alongamento da cápsula MTF do dedo operado',
+        description:
+          'Alongamento suave e progressivo da articulação metatarsofalângica, sob orientação do fisioterapeuta, para prevenir rigidez.',
       },
       {
         name: 'Alongamento dos dedos vizinhos',
         description:
           'Mobilização passiva dos dedos adjacentes ao operado para preservar amplitude e padrão de marcha.',
       },
-      {
-        name: 'Alongamento de panturrilha em descarga',
-        description:
-          'Realizado sentado ou deitado, com auxílio de toalha ou faixa, sem carga sobre o pé operado.',
-      },
-      {
-        name: 'Mobilização do tornozelo em todas as direções',
-        description:
-          'Inversão, eversão, dorsiflexão e plantiflexão do tornozelo, dentro do limite de conforto.',
-      },
     ],
   },
   {
-    id: 'mobilizacao-dedo',
-    title: 'Mobilização do Dedo Operado',
-    period: 'A PARTIR DA SEMANA 2 — ESSENCIAL CONTRA RIGIDEZ',
+    id: 'fortalecimento-controle',
+    title: 'Fortalecimento e Controle Motor',
+    period: 'A PARTIR DA SEMANA 4-6 — CONFORME LIBERAÇÃO CLÍNICA',
     color: 'beige',
     items: [
       {
-        name: 'Mobilização passiva do dedo',
-        description:
-          'O fisioterapeuta movimenta o dedo operado em flexão e extensão, dentro do limite de conforto, várias vezes por sessão.',
-      },
-      {
-        name: 'Mobilização ativa do dedo',
+        name: 'Mobilização ativa do dedo operado',
         description:
           'Você movimenta ativamente o dedo, sem carga, dentro da amplitude liberada — fundamental para evitar aderências.',
+      },
+      {
+        name: 'Fortalecimento progressivo dos músculos do pé',
+        description:
+          'Exercícios resistidos com faixa elástica, controlando carga e amplitude conforme tolerância e evolução clínica.',
+      },
+      {
+        name: 'Mobilização suave da cicatriz',
+        description:
+          'Quando liberado pela equipe: com dois dedos sobre a cicatriz, realize movimentos suaves em três direções — longitudinal, transversal e circular. Pressão firme mas sem dor, 1–2 min por direção, 1–2× ao dia.',
       },
       {
         name: 'Mobilização global do antepé',
@@ -87,12 +97,12 @@ export const exerciseCategories = [
       {
         name: 'Equilíbrio em apoio bipodal',
         description:
-          'Trabalho de equilíbrio com os dois pés apoiados, em superfícies estáveis e progredindo para superfícies instáveis.',
+          'Trabalho de equilíbrio com os dois pés apoiados, em superfícies estáveis progredindo para instáveis.',
       },
       {
-        name: 'Fortalecimento progressivo de pé e tornozelo',
+        name: 'Fortalecimento com resistência progressiva',
         description:
-          'Exercícios resistidos com faixa elástica, controlando carga e amplitude conforme tolerância e consolidação radiográfica.',
+          'Exercícios resistidos com faixa elástica e cargas progressivas, conforme tolerância e consolidação radiográfica.',
       },
       {
         name: 'Exercícios proprioceptivos',
@@ -102,9 +112,9 @@ export const exerciseCategories = [
     ],
   },
   {
-    id: 'avancados',
-    title: 'Reabilitação Avançada',
-    period: 'A PARTIR DOS 6 MESES — RETORNO PROGRESSIVO ÀS ATIVIDADES',
+    id: 'exercicios-avancados',
+    title: 'Exercícios Avançados',
+    period: 'A PARTIR DOS 3-6 MESES — RETORNO PROGRESSIVO ÀS ATIVIDADES',
     color: 'orange',
     items: [
       {
@@ -123,9 +133,9 @@ export const exerciseCategories = [
           'Programa específico para retorno a corrida e modalidades esportivas, respeitando o ritmo de consolidação.',
       },
       {
-        name: 'Adaptação ao calçado fechado e ao salto',
+        name: 'Adaptação progressiva ao calçado',
         description:
-          'Progressão do tênis largo → tênis comum → calçado fechado → salto baixo, conforme avaliação clínica.',
+          'Progressão guiada: tênis largo → tênis comum → calçado fechado → salto baixo, conforme avaliação clínica.',
       },
     ],
   },
