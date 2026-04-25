@@ -1,7 +1,10 @@
+import { illustrations } from './illustrations.js';
+
 export const phases = [
   {
     id: 1,
     icon: 'Shield',
+    image: illustrations.phase1,
     title: '1. Proteção e Repouso Inicial',
     period: 'Semanas 0-2',
     focus:
@@ -37,6 +40,7 @@ export const phases = [
   {
     id: 2,
     icon: 'Zap',
+    image: illustrations.phase2,
     title: '2. Progressão de Carga e Fisioterapia',
     period: 'Semanas 2-8',
     focus:
@@ -80,6 +84,7 @@ export const phases = [
   {
     id: 3,
     icon: 'TrendingUp',
+    image: illustrations.phase3,
     title: '3. Fortalecimento e Retorno às Atividades',
     period: 'Mês 2-6 (alta em 6 meses)',
     focus:

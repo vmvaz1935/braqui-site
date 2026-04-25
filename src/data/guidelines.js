@@ -1,7 +1,10 @@
+import { illustrations } from './illustrations.js';
+
 export const generalGuidelines = [
   {
     id: 'curativo',
     icon: 'Shield',
+    image: illustrations.dressing,
     title: 'Curativo das mini-incisões',
     items: [
       'Permanece intacto até o retorno na clínica (~2 semanas)',
@@ -14,6 +17,7 @@ export const generalGuidelines = [
   {
     id: 'sandalia',
     icon: 'TrendingUp',
+    image: illustrations.sandal,
     title: 'Sandália pós-operatória',
     items: [
       'Usar em todos os deslocamentos nas primeiras semanas conforme orientação',
@@ -25,6 +29,7 @@ export const generalGuidelines = [
   {
     id: 'repouso',
     icon: 'TrendingUp',
+    image: illustrations.elevation,
     title: 'Repouso e elevação',
     items: [
       'Pé acima do nível do coração sempre que possível — principal recurso anti-edema',
@@ -36,6 +41,7 @@ export const generalGuidelines = [
   {
     id: 'gelo',
     icon: 'AlertCircle',
+    image: illustrations.noIce,
     title: 'Gelo — NÃO utilizar',
     items: [
       'Não aplicar gelo diretamente sobre o curativo ou sobre as mini-incisões',

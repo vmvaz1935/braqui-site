@@ -33,6 +33,7 @@ import {
   references,
 } from '../../data/techniques.js';
 import { contacts } from '../../data/contacts.js';
+import { illustrations } from '../../data/illustrations.js';
 
 function SectionTitle({ icon: Icon, title, color = 'var(--primary-dark)', subtitle }) {
   return (
@@ -173,6 +174,25 @@ export default function OrientacoesTab() {
           title="Massagem da Cicatriz"
           subtitle={cicatrizMassage.intro}
         />
+        <div
+          className="mb-4 overflow-hidden"
+          style={{
+            aspectRatio: '3 / 1',
+            borderRadius: 14,
+            background:
+              'linear-gradient(135deg, var(--surface-soft) 0%, var(--primary-soft) 100%)',
+            border: '1px solid var(--stroke)',
+          }}
+        >
+          <img
+            src={illustrations.scarMassageTriptych}
+            alt="Três técnicas de massagem da cicatriz: vertical, horizontal e circular"
+            loading="lazy"
+            decoding="async"
+            draggable="false"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          />
+        </div>
         <ol className="space-y-2 mb-3">
           {cicatrizMassage.steps.map((step, i) => (
             <li
@@ -243,6 +263,48 @@ export default function OrientacoesTab() {
         </div>
       </Card>
 
+      {/* Progressão de calçados */}
+      <Card>
+        <SectionTitle
+          icon={CalendarIcon}
+          title="Progressão de Calçados"
+          subtitle="Da sandália pós-operatória ao retorno aos calçados habituais."
+        />
+        <div
+          className="mb-3 overflow-hidden"
+          style={{
+            aspectRatio: '16 / 9',
+            borderRadius: 14,
+            background:
+              'linear-gradient(135deg, var(--surface-soft) 0%, var(--primary-soft) 100%)',
+            border: '1px solid var(--stroke)',
+          }}
+        >
+          <img
+            src={illustrations.shoes}
+            alt="Progressão de calçados: sandália pós-operatória, tênis confortável e calçado habitual"
+            loading="lazy"
+            decoding="async"
+            draggable="false"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          />
+        </div>
+        <ul className="space-y-1.5">
+          <li className="flex gap-2" style={{ fontSize: '0.92rem', color: 'var(--text)', lineHeight: 1.6 }}>
+            <span style={{ color: 'var(--primary)', flex: '0 0 auto' }}>•</span>
+            <span><strong>0–6 semanas:</strong> sandália pós-operatória rígida durante toda a marcha autorizada.</span>
+          </li>
+          <li className="flex gap-2" style={{ fontSize: '0.92rem', color: 'var(--text)', lineHeight: 1.6 }}>
+            <span style={{ color: 'var(--primary)', flex: '0 0 auto' }}>•</span>
+            <span><strong>6–12 semanas:</strong> transição para tênis macio e confortável, com palmilha quando indicada.</span>
+          </li>
+          <li className="flex gap-2" style={{ fontSize: '0.92rem', color: 'var(--text)', lineHeight: 1.6 }}>
+            <span style={{ color: 'var(--primary)', flex: '0 0 auto' }}>•</span>
+            <span><strong>3–6 meses:</strong> retorno gradual ao calçado habitual, evitando salto alto e bico estreito até a alta.</span>
+          </li>
+        </ul>
+      </Card>
+
       {/* Cartilha Educativa */}
       <Card>
         <SectionTitle
@@ -252,6 +314,25 @@ export default function OrientacoesTab() {
         />
         <div className="space-y-2.5">
           <Expandable icon={BookOpen} title="O que é braquimetatarsia">
+            <div
+              className="mb-3 overflow-hidden"
+              style={{
+                aspectRatio: '4 / 3',
+                borderRadius: 12,
+                background:
+                  'linear-gradient(135deg, var(--surface-soft) 0%, var(--primary-soft) 100%)',
+                border: '1px solid var(--stroke)',
+              }}
+            >
+              <img
+                src={illustrations.anatomy}
+                alt="Vista superior do pé com 5 dedos, destacando o 4º metatarso encurtado"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
+            </div>
             <p
               className="italic mb-3"
               style={{ fontSize: '0.92rem', color: 'var(--text-muted)', lineHeight: 1.6 }}
@@ -272,6 +353,25 @@ export default function OrientacoesTab() {
           </Expandable>
 
           <Expandable icon={Heart} title="Causas">
+            <div
+              className="mb-3 overflow-hidden"
+              style={{
+                aspectRatio: '4 / 3',
+                borderRadius: 12,
+                background:
+                  'linear-gradient(135deg, var(--surface-soft) 0%, var(--primary-soft) 100%)',
+                border: '1px solid var(--stroke)',
+              }}
+            >
+              <img
+                src={illustrations.causes}
+                alt="Ilustração das possíveis causas da braquimetatarsia: congênita, trauma, idiopática"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
+            </div>
             <ul className="space-y-2">
               {causes.map((c, i) => (
                 <li
@@ -343,6 +443,25 @@ export default function OrientacoesTab() {
           </Expandable>
 
           <Expandable icon={Activity} title="Técnica cirúrgica (minimamente invasiva)">
+            <div
+              className="mb-3 overflow-hidden"
+              style={{
+                aspectRatio: '4 / 3',
+                borderRadius: 12,
+                background:
+                  'linear-gradient(135deg, var(--surface-soft) 0%, var(--primary-soft) 100%)',
+                border: '1px solid var(--stroke)',
+              }}
+            >
+              <img
+                src={illustrations.techniqueMis}
+                alt="Cirurgia minimamente invasiva com mini-incisões e fixação interna"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
+            </div>
             {techniques.intro && (
               <div
                 className="rounded-lg p-3 mb-3"
@@ -603,6 +722,24 @@ export default function OrientacoesTab() {
             Sinais de Alerta — entre em contato imediatamente
           </h3>
         </div>
+        <div
+          className="mb-3 overflow-hidden"
+          style={{
+            aspectRatio: '16 / 9',
+            borderRadius: 14,
+            background: 'rgba(255,255,255,0.6)',
+            border: '1px solid rgba(239,68,68,0.18)',
+          }}
+        >
+          <img
+            src={illustrations.warning}
+            alt="Sinais de alerta no pós-operatório: febre, vermelhidão, dor súbita"
+            loading="lazy"
+            decoding="async"
+            draggable="false"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          />
+        </div>
         <ul className="space-y-1.5">
           {warnings.map((w, i) => (
             <li key={i} className="flex gap-2" style={{ fontSize: '0.92rem', color: 'var(--text)' }}>
@@ -616,6 +753,25 @@ export default function OrientacoesTab() {
       {/* Contatos */}
       <Card style={{ background: 'var(--surface-soft)' }}>
         <SectionTitle icon={Phone} title="Contatos e Informações" />
+        <div
+          className="mb-4 overflow-hidden"
+          style={{
+            aspectRatio: '16 / 9',
+            borderRadius: 14,
+            background:
+              'linear-gradient(135deg, var(--surface-soft) 0%, var(--primary-soft) 100%)',
+            border: '1px solid var(--stroke)',
+          }}
+        >
+          <img
+            src={illustrations.contact}
+            alt="Equipe médica acolhedora pronta para atender"
+            loading="lazy"
+            decoding="async"
+            draggable="false"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          />
+        </div>
         <div className="space-y-2.5">
           <ContactRow
             icon={Phone}

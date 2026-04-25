@@ -63,21 +63,49 @@ export default function Accordion({ items }) {
             </button>
             <div className="collapsible" data-open={isOpen}>
               <div className="collapsible-inner">
-                <ul
-                  className="px-4 pb-4 pt-1 space-y-1.5"
+                <div
+                  className="px-4 pb-4 pt-3"
                   style={{ borderTop: '1px solid var(--stroke)' }}
                 >
-                  {it.items.map((line, i) => (
-                    <li
-                      key={i}
-                      className="flex gap-2"
-                      style={{ fontSize: '0.92rem', color: 'var(--text)', lineHeight: 1.6 }}
+                  {it.image && (
+                    <div
+                      className="mb-3 overflow-hidden"
+                      style={{
+                        aspectRatio: '4 / 3',
+                        borderRadius: 12,
+                        background:
+                          'linear-gradient(135deg, var(--surface-soft) 0%, var(--primary-soft) 100%)',
+                        border: '1px solid var(--stroke)',
+                      }}
                     >
-                      <span style={{ color: 'var(--primary)', flex: '0 0 auto', marginTop: 4 }}>•</span>
-                      <span>{line}</span>
-                    </li>
-                  ))}
-                </ul>
+                      <img
+                        src={it.image}
+                        alt={it.title}
+                        loading="lazy"
+                        decoding="async"
+                        draggable="false"
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          objectFit: 'cover',
+                          display: 'block',
+                        }}
+                      />
+                    </div>
+                  )}
+                  <ul className="space-y-1.5">
+                    {it.items.map((line, i) => (
+                      <li
+                        key={i}
+                        className="flex gap-2"
+                        style={{ fontSize: '0.92rem', color: 'var(--text)', lineHeight: 1.6 }}
+                      >
+                        <span style={{ color: 'var(--primary)', flex: '0 0 auto', marginTop: 4 }}>•</span>
+                        <span>{line}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

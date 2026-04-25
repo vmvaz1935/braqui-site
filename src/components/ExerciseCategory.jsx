@@ -126,6 +126,26 @@ export default function ExerciseCategory({ category, isOpen, onToggle }) {
       <div className="collapsible" data-open={isOpen}>
         <div className="collapsible-inner">
           <div className="px-4 pb-5 pt-1" style={{ borderTop: `1px solid ${p.border}` }}>
+            {category.image && (
+              <div
+                className="mt-4 overflow-hidden"
+                style={{
+                  aspectRatio: '4 / 3',
+                  borderRadius: 14,
+                  background: 'rgba(255,255,255,0.6)',
+                  border: `1px solid ${p.border}`,
+                }}
+              >
+                <img
+                  src={category.image}
+                  alt={category.title}
+                  loading="lazy"
+                  decoding="async"
+                  draggable="false"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                />
+              </div>
+            )}
             <ul className="mt-4 space-y-2.5">
               {category.items.map((it, i) => (
                 <li

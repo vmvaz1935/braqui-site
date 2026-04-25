@@ -102,6 +102,28 @@ export default function PhaseCard({ phase, isOpen, onToggle }) {
       <div className="collapsible" data-open={isOpen}>
         <div className="collapsible-inner">
           <div className="px-4 pb-6 pt-1" style={{ borderTop: '1px solid var(--stroke)' }}>
+            {phase.image && (
+              <div
+                className="mt-5 overflow-hidden"
+                style={{
+                  aspectRatio: '16 / 9',
+                  borderRadius: 16,
+                  background:
+                    'linear-gradient(135deg, var(--surface-soft) 0%, var(--primary-soft) 100%)',
+                  border: '1px solid var(--stroke)',
+                }}
+              >
+                <img
+                  src={phase.image}
+                  alt={phase.title}
+                  loading="lazy"
+                  decoding="async"
+                  draggable="false"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                />
+              </div>
+            )}
+
             {/* Foco da fase */}
             <div
               className="mt-5 mb-7 p-4 rounded-2xl flex items-start gap-3 relative overflow-hidden"

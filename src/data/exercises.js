@@ -1,9 +1,12 @@
+import { illustrations } from './illustrations.js';
+
 export const exerciseCategories = [
   {
     id: 'liberacao-mobilidade',
     title: 'Liberação e Mobilidade',
     period: 'A PARTIR DAS PRIMEIRAS 48-72H — APENAS QUANDO LIBERADO PELA EQUIPE',
     color: 'sage',
+    image: illustrations.exMobility,
     items: [
       {
         name: 'Mobilização do tornozelo',
@@ -32,6 +35,7 @@ export const exerciseCategories = [
     title: 'Alongamentos',
     period: 'A PARTIR DA SEMANA 2-4 — INTEGRADOS À FISIOTERAPIA',
     color: 'blue',
+    image: illustrations.exStretch,
     items: [
       {
         name: 'Alongamento de cadeia posterior sentado',
@@ -60,6 +64,7 @@ export const exerciseCategories = [
     title: 'Fortalecimento e Controle Motor',
     period: 'A PARTIR DA SEMANA 4-6 — CONFORME LIBERAÇÃO CLÍNICA',
     color: 'beige',
+    image: illustrations.exStrength,
     items: [
       {
         name: 'Mobilização ativa do dedo operado',
@@ -88,6 +93,7 @@ export const exerciseCategories = [
     title: 'Treino Funcional',
     period: 'A PARTIR DO MÊS 2-3 — APÓS LIBERAÇÃO RADIOGRÁFICA',
     color: 'cream',
+    image: illustrations.exFunctional,
     items: [
       {
         name: 'Treino de marcha em superfície plana',
@@ -116,6 +122,7 @@ export const exerciseCategories = [
     title: 'Exercícios Avançados',
     period: 'A PARTIR DOS 3-6 MESES — RETORNO PROGRESSIVO ÀS ATIVIDADES',
     color: 'orange',
+    image: illustrations.exAdvanced,
     items: [
       {
         name: 'Equilíbrio em apoio unipodal',

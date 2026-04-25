@@ -1,5 +1,6 @@
 import React from 'react';
 import { AlertCircle, ChevronDown } from 'lucide-react';
+import { illustrations } from '../data/illustrations.js';
 
 export default function WelcomeScreen({ onStart }) {
   return (
@@ -11,9 +12,32 @@ export default function WelcomeScreen({ onStart }) {
         <img
           src="/design-system/assets/logo-branca.png.webp"
           alt="Dra. Laice Cunha"
-          className="w-44 sm:w-56 mb-7 select-none"
+          className="w-36 sm:w-44 mb-5 select-none"
           draggable="false"
         />
+
+        <div
+          className="w-full mb-6 overflow-hidden"
+          style={{
+            maxWidth: 220,
+            aspectRatio: '4 / 5',
+            borderRadius: 22,
+            background: 'rgba(255,255,255,0.12)',
+            border: '1px solid rgba(255,255,255,0.18)',
+            backdropFilter: 'blur(8px)',
+            WebkitBackdropFilter: 'blur(8px)',
+            boxShadow: '0 12px 32px rgba(0,0,0,0.18)',
+          }}
+        >
+          <img
+            src={illustrations.welcomeHero}
+            alt="Pé em repouso, recuperação acolhedora"
+            loading="eager"
+            decoding="async"
+            draggable="false"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          />
+        </div>
 
         <h1
           className="font-bold text-white leading-tight mb-4"

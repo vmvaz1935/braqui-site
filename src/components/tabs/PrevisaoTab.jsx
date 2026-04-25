@@ -3,6 +3,7 @@ import { Calendar, ShieldCheck } from 'lucide-react';
 import TimelineMilestones from '../TimelineMilestones.jsx';
 import RecoveryTimeCard from '../RecoveryTimeCard.jsx';
 import { timeline, recoveryTimeTiles, risks } from '../../data/timeline.js';
+import { illustrations } from '../../data/illustrations.js';
 
 export default function PrevisaoTab() {
   return (
@@ -51,6 +52,25 @@ export default function PrevisaoTab() {
           >
             Marcos da Recuperação
           </h3>
+        </div>
+        <div
+          className="mb-4 overflow-hidden"
+          style={{
+            aspectRatio: '16 / 9',
+            borderRadius: 14,
+            background:
+              'linear-gradient(135deg, var(--surface-soft) 0%, var(--primary-soft) 100%)',
+            border: '1px solid var(--stroke)',
+          }}
+        >
+          <img
+            src={illustrations.timeline}
+            alt="Linha do tempo da recuperação: pós-operatório imediato, fisioterapia e retorno às atividades"
+            loading="lazy"
+            decoding="async"
+            draggable="false"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          />
         </div>
         <TimelineMilestones items={timeline} />
       </div>
