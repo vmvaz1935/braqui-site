@@ -1,7 +1,11 @@
 export const myths = [
   {
-    q: '"O fixador externo é extremamente dolorido."',
-    a: '**Mito.** Há desconforto, principalmente nas primeiras semanas e nos dias de ajuste, mas é controlável com analgesia e rotina. A maior parte das pacientes se adapta bem.',
+    q: '"A correção de braquimetatarsia exige fixador externo."',
+    a: '**Mito.** Hoje a correção pode ser feita por **técnica minimamente invasiva (MIS)**, com mini-incisões e fixação interna (mini-placa, parafusos ou fios). Não há fixador externo aparente nem ajustes diários domiciliares.',
+  },
+  {
+    q: '"A cirurgia é extremamente dolorida."',
+    a: '**Mito.** Há desconforto nos primeiros dias, controlado com analgesia simples. Por ser minimamente invasiva, há menos agressão a tecidos moles, com dor pós-operatória geralmente menor do que em técnicas abertas convencionais.',
   },
   {
     q: '"Braqui é só estética."',
@@ -12,47 +16,51 @@ export const myths = [
     a: '**Mito com ressalva.** Em geral aguarda-se o fechamento das placas de crescimento. Há exceções específicas avaliadas pela equipe.',
   },
   {
-    q: '"Depois da retirada do fixador, está tudo resolvido."',
-    a: '**Mito.** O osso novo continua maturando por meses. A fisioterapia e os cuidados seguem por mais tempo.',
+    q: '"Depois da cirurgia, está tudo resolvido em poucas semanas."',
+    a: '**Mito.** Mesmo na técnica minimamente invasiva, o osso continua maturando por meses. A fisioterapia e os cuidados seguem por mais tempo, com alta funcional entre 6 e 12 meses.',
   },
   {
     q: '"Qualquer ortopedista faz."',
-    a: '**Mito.** A técnica pede cirurgião de **pé e tornozelo** com experiência em osteotomias do antepé e, idealmente, em alongamento ósseo.',
+    a: '**Mito.** A técnica pede cirurgião de **pé e tornozelo** com experiência específica em **cirurgia minimamente invasiva (MIS)** do antepé.',
   },
   {
     q: '"Fumar não atrapalha."',
-    a: '**Mito grave.** O tabagismo é um dos principais inimigos da formação óssea, especialmente no alongamento gradual.',
+    a: '**Mito grave.** O tabagismo é um dos principais inimigos da formação óssea e da cicatrização, mesmo em técnicas pouco invasivas.',
   },
 ];
 
 export const faq = [
   {
+    q: 'Vou precisar de fixador externo?',
+    a: '**Não.** As técnicas utilizadas pela equipe são **minimamente invasivas (MIS)**, com mini-incisões e **fixação interna** (mini-placa, parafusos ou fios). Não há fixador externo nem ajustes diários em casa.',
+  },
+  {
     q: 'Dói muito? Quanto tempo dura a dor?',
-    a: 'Dor moderada nos primeiros dias; os dias de ajuste podem trazer desconforto passageiro. A rotina de analgesia e repouso controla bem. Dor persistente e intensa merece avaliação.',
+    a: 'Por ser minimamente invasiva, a dor pós-operatória costuma ser **leve a moderada** nos primeiros dias e bem controlada com analgesia simples. Dor persistente e intensa merece avaliação.',
   },
   {
     q: 'Vou precisar de muletas?',
-    a: '**Frequentemente sim**, especialmente nas primeiras semanas, dependendo da técnica e da carga liberada. Liberação sempre individual.',
+    a: '**Frequentemente sim**, especialmente nas primeiras semanas, dependendo da carga liberada. Liberação sempre individual.',
   },
   {
     q: 'Posso operar os dois pés ao mesmo tempo?',
-    a: '**Em casos selecionados, sim**, mas exige ainda mais preparo em casa (muletas, apoio, mobilidade reduzida). A maioria prefere um pé de cada vez.',
+    a: '**Em casos selecionados, sim**, mas exige preparo em casa (muletas, apoio, mobilidade reduzida). A maioria prefere um pé de cada vez.',
   },
   {
     q: 'Quando posso dirigir?',
-    a: 'Depende do lado operado, da técnica e da presença do fixador. Liberação individual.',
+    a: 'Depende do lado operado e da liberação de carga sobre o pé. Em geral, **a partir de 4–6 semanas**, com avaliação individual.',
   },
   {
     q: 'Quando volto ao trabalho?',
-    a: 'Home office: 2-3 semanas. Presencial sedentário: 4-6 semanas. Em pé / operacional: costuma só ser liberado após a retirada do fixador e consolidação adequada.',
+    a: 'Home office: **1–2 semanas**. Presencial sedentário: **3–4 semanas**. Em pé / operacional: somente após consolidação adequada e liberação clínica.',
   },
   {
     q: 'Quando volto a usar tênis, sandália, salto?',
-    a: 'Tênis largo: após a retirada do fixador e com liberação. Sandália fechada comum: em torno de 3-4 meses. Salto baixo: a partir do 6º mês.',
+    a: 'Tênis largo: **a partir de 4–6 semanas** com liberação. Sandália fechada comum: em torno de **3–4 meses**. Salto baixo: a partir do **6º mês**.',
   },
   {
     q: 'Fica cicatriz? Como cuidar?',
-    a: 'Sim — uma cicatriz principal da osteotomia e pequenas marcas dos pinos. O acompanhamento inclui hidratação, proteção solar e, quando indicado, silicone.',
+    a: 'Sim, mas as cicatrizes da MIS são **pequenas (mini-incisões de 3–5 mm)** e tendem a ficar discretas. O cuidado inclui hidratação, proteção solar e, quando indicado, silicone.',
   },
   {
     q: 'Plano de saúde cobre?',

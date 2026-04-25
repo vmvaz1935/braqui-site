@@ -8,7 +8,7 @@ export const exerciseCategories = [
       {
         name: 'Mobilização do tornozelo',
         description:
-          'Movimentos suaves de flexão e extensão do tornozelo, com o pé apoiado, evitando dor e tração no fixador. Realizar em séries curtas, várias vezes ao dia.',
+          'Movimentos suaves de flexão e extensão do tornozelo, com o pé apoiado, sem dor. Realizar em séries curtas, várias vezes ao dia.',
       },
       {
         name: 'Movimento dos dedos não operados',
@@ -46,7 +46,7 @@ export const exerciseCategories = [
       {
         name: 'Mobilização do tornozelo em todas as direções',
         description:
-          'Inversão, eversão, dorsiflexão e plantiflexão do tornozelo, mantendo o fixador estável.',
+          'Inversão, eversão, dorsiflexão e plantiflexão do tornozelo, dentro do limite de conforto.',
       },
     ],
   },
@@ -76,7 +76,7 @@ export const exerciseCategories = [
   {
     id: 'treino-funcional',
     title: 'Treino Funcional',
-    period: 'A PARTIR DO MÊS 2-3 — APÓS LIBERAÇÃO E RETIRADA DO FIXADOR',
+    period: 'A PARTIR DO MÊS 2-3 — APÓS LIBERAÇÃO RADIOGRÁFICA',
     color: 'cream',
     items: [
       {

@@ -2,24 +2,25 @@ export const generalGuidelines = [
   {
     id: 'curativo',
     icon: 'Shield',
-    title: 'Curativo',
+    title: 'Curativo das mini-incisões',
     items: [
-      'Permanece intacto até o retorno na clínica',
-      'Em caso de pequeno sangramento, reforçar com gaze estéril por cima',
+      'Permanece intacto até o retorno na clínica (em geral 7–14 dias)',
+      'Em caso de pequeno sangramento, reforçar com gaze estéril por cima sem retirar o curativo',
       'Não aplicar pomadas, cremes ou substâncias sem orientação',
-      'Não molhar o curativo em hipótese alguma',
+      'Não molhar o curativo em hipótese alguma — banho com proteção plástica',
+      'Após a retirada dos pontos, o curativo passa a ser leve e simples',
     ],
   },
   {
-    id: 'fixador',
+    id: 'fios-pinos',
     icon: 'Zap',
-    title: 'Fixador externo e pinos',
+    title: 'Fios temporários e fixação interna',
     items: [
-      'Limpeza diária do trajeto dos pinos com a solução prescrita (em geral soro fisiológico ± antisséptico específico)',
-      'Inspecionar diariamente em busca de vermelhidão, secreção, dor local ou mau odor',
-      'Não forçar, não bater, não cobrir com pano que faça tração',
-      'Organizar roupa folgada e calçado adaptado ao volume do fixador',
-      'Respeitar todos os horários de ajuste prescritos',
+      'A fixação é interna (mini-placa, parafusos ou fios) — não há fixador externo aparente',
+      'Quando há fio temporário (K-wire) que sai pela ponta do dedo, mantê-lo limpo, seco e protegido',
+      'Inspecionar a região diariamente em busca de vermelhidão, secreção ou dor local',
+      'Não puxar, não bater, não molhar a região do fio',
+      'A retirada de fios temporários, quando indicada, é feita em consultório, sem nova cirurgia',
     ],
   },
   {
@@ -27,10 +28,10 @@ export const generalGuidelines = [
     icon: 'TrendingUp',
     title: 'Sandália / bota pós-operatória',
     items: [
-      'Uso conforme prescrição da equipe',
-      'Carga parcial ou sem carga, dependendo da fase e da técnica utilizada',
+      'Uso conforme prescrição da equipe — tipicamente nas primeiras 4–6 semanas',
+      'Carga parcial ou sem carga, conforme a fase e a técnica utilizada',
       'Nunca pisar descalça, mesmo dentro de casa',
-      'Trocar somente conforme orientação da equipe',
+      'Trocar para tênis largo somente conforme orientação da equipe',
     ],
   },
   {
@@ -49,8 +50,8 @@ export const generalGuidelines = [
     icon: 'AlertCircle',
     title: 'Gelo — atenção',
     items: [
-      'Não aplicar diretamente sobre o curativo nem sobre o fixador',
-      'Controle do edema feito com repouso, elevação e medicação prescrita',
+      'Não aplicar diretamente sobre o curativo ou sobre as mini-incisões',
+      'Controle do edema feito principalmente com repouso, elevação e medicação prescrita',
       'Em caso de dúvida, consultar a equipe antes de qualquer aplicação',
     ],
   },
@@ -59,8 +60,9 @@ export const generalGuidelines = [
     icon: 'Hand',
     title: 'Cicatrizes',
     items: [
+      'As cicatrizes são pequenas (mini-incisões de 3–5 mm) e tendem a ficar discretas',
       'Após fechamento, mobilização e hidratação somente com liberação',
-      'Proteção solar por pelo menos 6 meses (cicatrizes e trajetos dos pinos tendem a hiperpigmentar)',
+      'Proteção solar por pelo menos 6 meses (cicatrizes tendem a hiperpigmentar)',
       'Massagem com creme indicado, em movimentos suaves e lentos, quando liberado',
       'Silicone em gel ou placa quando indicado pela equipe',
     ],
@@ -70,7 +72,7 @@ export const generalGuidelines = [
 export const dailyActivities = [
   {
     title: 'Banho',
-    text: 'Proteger o fixador com plástico impermeável; não molhar os pinos. Banho de chuveiro sentado, sempre com a sandália/bota.',
+    text: 'Proteger o pé com plástico impermeável até a retirada dos pontos. Banho de chuveiro sentado, sempre com a sandália pós-operatória nos deslocamentos.',
   },
   {
     title: 'Locomoção',
@@ -78,15 +80,15 @@ export const dailyActivities = [
   },
   {
     title: 'Dirigir',
-    text: 'Somente com liberação médica. Depende do lado operado, da técnica e da presença do fixador externo.',
+    text: 'Somente com liberação médica. Depende do lado operado e da liberação de carga sobre o pé.',
   },
   {
     title: 'Trabalho',
-    text: 'Home office a partir de 2-3 semanas. Presencial sedentário: 4-6 semanas. Em pé / operacional: somente após retirada do fixador.',
+    text: 'Home office a partir de 1–2 semanas. Presencial sedentário: 3–4 semanas. Em pé / operacional: somente após consolidação adequada.',
   },
   {
     title: 'Academia / corrida',
-    text: 'Proibido durante distração e consolidação. Retorno gradual após retirada do fixador e liberação clínica.',
+    text: 'Proibido durante a fase de consolidação. Retorno gradual após liberação clínica e radiográfica.',
   },
   {
     title: 'Salto alto',
@@ -94,15 +96,15 @@ export const dailyActivities = [
   },
   {
     title: 'Praia / piscina',
-    text: 'Apenas após a retirada do fixador e com cicatrizes fechadas. Proteção solar das cicatrizes e marcas dos pinos.',
+    text: 'Apenas após cicatriz fechada e estável. Proteção solar das cicatrizes.',
   },
 ];
 
 export const warnings = [
-  'Vermelhidão, secreção ou mau odor no trajeto dos pinos',
+  'Vermelhidão, secreção ou mau odor nas mini-incisões',
   'Febre acima de 37,8 °C',
   'Dor que piora subitamente no dedo operado',
-  'Afrouxamento ou quebra de um pino do fixador',
+  'Curativo encharcado de sangue ou descolado',
   'Inchaço súbito e doloroso da panturrilha',
   'Perda progressiva de sensibilidade no pé',
 ];

@@ -1,30 +1,30 @@
 export const timeline = [
   {
-    period: 'Até o retorno (~5-7 dias)',
-    pills: ['Curativo intacto', 'Pé elevado', 'Início da distração após latência'],
+    period: 'Até o retorno (~7-14 dias)',
+    pills: ['Curativo intacto', 'Pé elevado', 'Sandália pós-operatória'],
   },
   {
-    period: 'Semana 2-4',
+    period: 'Semana 2-3',
     pills: [
-      'Distração em progressão (~0,5 mm/dia)',
+      'Retirada dos pontos em consultório',
       'Início da fisioterapia',
       'Home office possível',
-      'Curativo dos pinos diário',
+      'Curativo simples e mais leve',
     ],
   },
   {
-    period: 'Semana 6-8',
+    period: 'Semana 4-6',
     pills: [
-      'Conclusão da distração (na maioria dos casos)',
-      'Início da consolidação óssea',
+      'Carga progressiva conforme orientação',
+      'Mobilização ativa do dedo',
       'Liberação de tarefas domésticas leves',
     ],
   },
   {
     period: '2-3 meses',
     pills: [
-      'Controle radiográfico',
-      'Retirada do fixador (com osso maduro)',
+      'Controle radiográfico de consolidação',
+      'Retirada de fios temporários (quando indicado)',
       'Início do tênis largo',
     ],
   },
@@ -45,7 +45,7 @@ export const timeline = [
     ],
   },
   {
-    period: '12 meses',
+    period: '6-12 meses',
     pills: [
       'Alta funcional',
       'Cicatrizes maduras',
@@ -55,18 +55,18 @@ export const timeline = [
 ];
 
 export const recoveryTimeTiles = [
-  { duration: '2-3 meses', description: 'Retirada do fixador externo' },
+  { duration: '2-6 semanas', description: 'Cicatrização e início da fisioterapia' },
   { duration: '3-6 meses', description: 'Calçado e atividade de baixo / médio impacto' },
-  { duration: '12 meses', description: 'Alta funcional completa' },
+  { duration: '6-12 meses', description: 'Alta funcional completa' },
 ];
 
 export const risks = [
-  { risk: 'Infecção no trajeto dos pinos', prevention: 'Limpeza diária, inspeção e comunicação precoce de qualquer sinal' },
-  { risk: 'Consolidação lenta / pseudoartrose', prevention: 'Não fumar, controlar diabetes e manter dosagem correta da distração' },
+  { risk: 'Infecção superficial das mini-incisões', prevention: 'Curativo limpo e seco, inspeção diária e comunicação precoce' },
+  { risk: 'Consolidação lenta / pseudoartrose', prevention: 'Não fumar, controlar diabetes e respeitar a carga prescrita' },
   { risk: 'Rigidez da articulação MTF', prevention: 'Fisioterapia contínua, alongamento e mobilização precoce' },
-  { risk: 'Alteração de sensibilidade', prevention: 'Técnica cuidadosa — a maioria melhora com o tempo' },
-  { risk: 'Quebra ou afrouxamento de pino', prevention: 'Respeitar orientações de proteção e retornos' },
+  { risk: 'Alteração de sensibilidade local', prevention: 'Técnica cuidadosa — a maioria melhora com o tempo' },
+  { risk: 'Migração ou desconforto de fio temporário', prevention: 'Acompanhamento clínico próximo e retirada no momento certo' },
   { risk: 'Cicatriz hipertrófica', prevention: 'Proteção solar, silicone e massagem quando liberados' },
-  { risk: 'Trombose venosa', prevention: 'Deambulação precoce permitida, hidratação e profilaxia quando indicada' },
-  { risk: 'Consolidação antes do ganho desejado', prevention: 'Acompanhamento radiográfico próximo' },
+  { risk: 'Trombose venosa', prevention: 'Mobilização precoce, hidratação e profilaxia quando indicada' },
+  { risk: 'Ganho de comprimento aquém do desejado', prevention: 'Planejamento individualizado e acompanhamento radiográfico' },
 ];

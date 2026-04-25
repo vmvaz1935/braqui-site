@@ -300,7 +300,20 @@ export default function OrientacoesTab() {
             </div>
           </Expandable>
 
-          <Expandable icon={Activity} title="Técnicas A vs B (alongamento agudo vs gradual)">
+          <Expandable icon={Activity} title="Técnica cirúrgica (minimamente invasiva)">
+            {techniques.intro && (
+              <div
+                className="rounded-lg p-3 mb-3"
+                style={{
+                  background: 'var(--medical-sage-soft)',
+                  border: '1px solid rgba(125,148,137,0.35)',
+                }}
+              >
+                <div style={{ fontSize: '0.92rem', color: 'var(--text)', lineHeight: 1.65 }}>
+                  <RichText text={techniques.intro} />
+                </div>
+              </div>
+            )}
             <div className="space-y-3 mb-3">
               <div
                 className="rounded-lg p-3"
@@ -371,6 +384,14 @@ export default function OrientacoesTab() {
                 </tbody>
               </table>
             </div>
+            {techniques.note && (
+              <p
+                className="italic mt-3"
+                style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.6 }}
+              >
+                <RichText text={techniques.note} />
+              </p>
+            )}
           </Expandable>
 
           <Expandable icon={AlertTriangle} title="Contraindicações">

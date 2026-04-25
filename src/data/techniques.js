@@ -30,35 +30,41 @@ export const whyTreat = {
 };
 
 export const techniques = {
+  intro:
+    'Na nossa clínica, a correção é realizada por **técnica minimamente invasiva (MIS)**, com mini-incisões de 3–5 mm e **fixação interna**. Não utilizamos fixador externo, não há ajustes diários em casa nem cuidados com pinos visíveis.',
   optionA: {
-    title: 'A) Alongamento agudo com enxerto ósseo',
+    title: 'A) MIS com alongamento agudo + enxerto',
     bullets: [
-      'Em um único tempo cirúrgico, o metatarso é cortado e alongado na hora com um enxerto ósseo (da crista ilíaca ou do calcâneo da própria paciente)',
-      'Fixação com mini-placa, parafusos ou fios',
-      'Indicado para encurtamentos menores (geralmente ≤ ~1 cm). Dado a ser validado pelo cirurgião',
+      'Em um único tempo cirúrgico, o metatarso é cortado por mini-incisões e alongado de imediato',
+      'Quando necessário, é interposto enxerto ósseo (autólogo do calcâneo ou substituto sintético)',
+      'Fixação interna com mini-placa, parafusos ou fios',
+      'Indicado para encurtamentos pequenos e moderados, com pele e tecidos moles em boas condições',
     ],
   },
   optionB: {
-    title: 'B) Alongamento gradual com mini-fixador externo',
+    title: 'B) MIS com osteotomia em deslizamento / encurtamento dos vizinhos',
     bullets: [
-      'Calotasia / distração osteogênica: o metatarso é cortado e o osso é alongado milímetro a milímetro ao longo de semanas',
-      'Distração típica: ~0,5 mm/dia, em 4 ajustes de 0,125 mm. Parâmetros a serem validados pelo cirurgião',
-      'Indicado para encurtamentos maiores ou para preservar vascularização e tecidos moles',
+      'Em casos selecionados, em vez de alongar o metatarso curto, encurtam-se levemente os vizinhos para reequilibrar a curva metatársica',
+      'Realizada por mini-incisões, com fresa específica e fixação interna',
+      'Indicada quando há sobrecarga importante dos metatarsos adjacentes ou quando o alongamento puro não é a melhor estratégia',
+      'Evita áreas doadoras de enxerto e tem recuperação tipicamente mais simples',
     ],
   },
   comparisonTable: {
-    headers: ['Aspecto', 'Alongamento agudo', 'Alongamento gradual (fixador)'],
+    headers: ['Aspecto', 'MIS (técnica usada aqui)', 'Cirurgia aberta convencional'],
     rows: [
-      ['Tempo de cirurgia', 'Único ato', 'Único ato + ajustes domiciliares'],
-      ['Ganho de comprimento', 'Limitado', 'Maior (respeita tecidos moles)'],
-      ['Enxerto', 'Sim (área doadora)', 'Não (osso novo se forma)'],
-      ['Fixador externo visível', 'Não', 'Sim (semanas a meses)'],
-      ['Tempo total', 'Mais curto', 'Mais longo'],
-      ['Risco de rigidez', 'Se ganho agressivo', 'Menor se bem dosada'],
-      ['Risco específico', 'Não consolidação do enxerto', 'Infecção no trajeto dos pinos'],
-      ['Cicatriz', 'Do pé + área doadora', 'Pé + pequenas marcas dos pinos'],
+      ['Incisão', 'Mini-incisões de 3–5 mm', 'Incisão única, mais ampla'],
+      ['Fixação', 'Interna (placa, parafusos, fios)', 'Interna (placa/parafusos)'],
+      ['Fixador externo', 'Não utilizado', 'Pode ser usado em algumas técnicas'],
+      ['Agressão a tecidos moles', 'Mínima', 'Maior'],
+      ['Edema e dor pós-operatória', 'Tipicamente menores', 'Tipicamente maiores'],
+      ['Cicatrizes', 'Pequenas e discretas', 'Maior'],
+      ['Tempo de internação', 'Geralmente bem curto', 'Geralmente curto'],
+      ['Reabilitação', 'Início precoce, fisioterapia desde cedo', 'Início conforme protocolo'],
     ],
   },
+  note:
+    '*A escolha entre as opções é individualizada e definida pela cirurgiã com base no exame clínico, radiografias com carga e expectativa funcional da paciente.*',
 };
 
 export const contraindications = {
@@ -69,7 +75,7 @@ export const contraindications = {
     'Diabetes descompensada',
   ],
   relative: [
-    'Tabagismo ativo (reduz muito a formação óssea)',
+    'Tabagismo ativo (reduz muito a cicatrização e a formação óssea)',
     'Doença reumatológica em atividade',
     'Alterações de coagulação',
     'Expectativa de pós-operatório curto demais',
@@ -85,16 +91,16 @@ export const alternatives = [
 
 export const journey = [
   '**Avaliação inicial** — anamnese, exame clínico, radiografias com carga',
-  '**Plano cirúrgico personalizado** — escolha da técnica (agudo x gradual), estimativa de tempo e de retorno',
+  '**Plano cirúrgico personalizado** — escolha da técnica MIS adequada, estimativa de tempo e de retorno',
   '**Preparo pré-operatório** — exames laboratoriais, avaliação cardiológica quando indicada, controle de fatores de risco (glicemia, tabagismo)',
-  '**Cirurgia** — em hospital acreditado, com time completo',
+  '**Cirurgia minimamente invasiva** — em hospital acreditado, com time completo',
   '**Acompanhamento pós + fisioterapia** — retornos programados + fisioterapia estruturada até a consolidação final',
 ];
 
 export const howToChoose = [
   '**RQE** em Ortopedia/Traumatologia com área de atuação em **pé e tornozelo**',
   'Filiação à **SBMCP/ABTPé**',
-  'Experiência específica em **osteotomias do antepé e alongamento ósseo**',
+  'Experiência específica em **cirurgia minimamente invasiva (MIS) do antepé**',
   '**Hospital acreditado** e equipe multidisciplinar',
   '**Avaliação individualizada** — nunca pacote pronto, nunca promessa de resultado',
 ];
@@ -110,6 +116,6 @@ export const references = [
   { label: 'AOFAS — FootCareMD', url: 'https://www.footcaremd.org' },
   { label: 'CFM — Resolução nº 1.974/2011', url: 'https://portal.cfm.org.br' },
   { label: 'CFM — Código de Ética Médica', url: 'https://portal.cfm.org.br' },
-  { label: 'PubMed — brachymetatarsia correction', url: 'https://pubmed.ncbi.nlm.nih.gov' },
+  { label: 'PubMed — minimally invasive forefoot surgery', url: 'https://pubmed.ncbi.nlm.nih.gov' },
   { label: 'SciELO Brasil — Revista Brasileira de Ortopedia', url: 'https://www.scielo.br' },
 ];
