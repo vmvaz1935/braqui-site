@@ -101,10 +101,10 @@ export default function PhaseCard({ phase, isOpen, onToggle }) {
 
       <div className="collapsible" data-open={isOpen}>
         <div className="collapsible-inner">
-          <div className="px-4 pb-5 pt-1" style={{ borderTop: '1px solid var(--stroke)' }}>
+          <div className="px-4 pb-6 pt-1" style={{ borderTop: '1px solid var(--stroke)' }}>
             {/* Foco da fase */}
             <div
-              className="mt-4 mb-5 p-4 rounded-2xl flex items-start gap-3 relative overflow-hidden"
+              className="mt-5 mb-7 p-4 rounded-2xl flex items-start gap-3 relative overflow-hidden"
               style={{
                 background:
                   'linear-gradient(135deg, var(--surface-soft) 0%, var(--primary-soft) 100%)',
@@ -144,11 +144,11 @@ export default function PhaseCard({ phase, isOpen, onToggle }) {
 
             {/* Suas Metas */}
             <SectionHeader icon={Target} title="Suas metas" count={phase.goals.length} />
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-8">
               {phase.goals.map((g, i) => (
                 <li
                   key={i}
-                  className="relative rounded-2xl p-3.5 pl-4 transition"
+                  className="relative rounded-2xl p-4 pl-4 transition"
                   style={{
                     background: 'var(--surface)',
                     border: '1px solid var(--stroke)',
@@ -188,7 +188,7 @@ export default function PhaseCard({ phase, isOpen, onToggle }) {
             {/* O que fazer */}
             <SectionHeader icon={Check} title="O que fazer" tone="sage" count={phase.do.length} />
             <ul
-              className="rounded-2xl mb-6 overflow-hidden"
+              className="rounded-2xl mb-8 overflow-hidden"
               style={{
                 background:
                   'linear-gradient(180deg, var(--medical-sage-soft) 0%, rgba(232,240,236,0.55) 100%)',
@@ -198,20 +198,20 @@ export default function PhaseCard({ phase, isOpen, onToggle }) {
               {phase.do.map((item, i) => (
                 <li
                   key={i}
-                  className="flex items-start gap-3 px-3.5 py-2.5"
+                  className="flex items-start gap-3 px-4 py-3.5"
                   style={{
                     borderTop: i === 0 ? 'none' : '1px solid rgba(125,148,137,0.2)',
-                    fontSize: '0.92rem',
+                    fontSize: '0.93rem',
                     color: 'var(--text)',
-                    lineHeight: 1.55,
+                    lineHeight: 1.6,
                   }}
                 >
                   <span
                     aria-hidden="true"
                     className="shrink-0 flex items-center justify-center"
                     style={{
-                      width: 22,
-                      height: 22,
+                      width: 24,
+                      height: 24,
                       borderRadius: '50%',
                       background: 'rgba(125,148,137,0.95)',
                       color: '#fff',
@@ -219,7 +219,7 @@ export default function PhaseCard({ phase, isOpen, onToggle }) {
                       boxShadow: '0 1px 3px rgba(61,99,88,0.25)',
                     }}
                   >
-                    <Check size={13} strokeWidth={3} />
+                    <Check size={14} strokeWidth={3} />
                   </span>
                   <span className="flex-1">
                     <RichText text={item} />
@@ -231,7 +231,7 @@ export default function PhaseCard({ phase, isOpen, onToggle }) {
             {/* O que evitar */}
             <SectionHeader icon={AlertOctagon} title="O que evitar" tone="error" count={phase.avoid.length} />
             <ul
-              className="rounded-2xl mb-6 overflow-hidden"
+              className="rounded-2xl mb-8 overflow-hidden"
               style={{
                 background: 'linear-gradient(180deg, #fef2f2 0%, rgba(254,242,242,0.6) 100%)',
                 border: '1px solid rgba(239,68,68,0.25)',
@@ -240,20 +240,20 @@ export default function PhaseCard({ phase, isOpen, onToggle }) {
               {phase.avoid.map((item, i) => (
                 <li
                   key={i}
-                  className="flex items-start gap-3 px-3.5 py-2.5"
+                  className="flex items-start gap-3 px-4 py-3.5"
                   style={{
                     borderTop: i === 0 ? 'none' : '1px solid rgba(239,68,68,0.15)',
-                    fontSize: '0.92rem',
+                    fontSize: '0.93rem',
                     color: 'var(--text)',
-                    lineHeight: 1.55,
+                    lineHeight: 1.6,
                   }}
                 >
                   <span
                     aria-hidden="true"
                     className="shrink-0 flex items-center justify-center"
                     style={{
-                      width: 22,
-                      height: 22,
+                      width: 24,
+                      height: 24,
                       borderRadius: '50%',
                       background: '#dc6262',
                       color: '#fff',
@@ -261,7 +261,7 @@ export default function PhaseCard({ phase, isOpen, onToggle }) {
                       boxShadow: '0 1px 3px rgba(220,98,98,0.3)',
                     }}
                   >
-                    <X size={13} strokeWidth={3} />
+                    <X size={14} strokeWidth={3} />
                   </span>
                   <span className="flex-1">
                     <RichText text={item} />
@@ -272,15 +272,15 @@ export default function PhaseCard({ phase, isOpen, onToggle }) {
 
             {/* Exercícios */}
             <SectionHeader icon={Activity} title="Exercícios da fase" count={phase.exercises.length} />
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2.5">
               {phase.exercises.map((ex, i) => (
                 <span
                   key={i}
                   className="font-semibold inline-flex items-center gap-1.5"
                   style={{
                     fontFamily: 'Poppins, Inter, sans-serif',
-                    fontSize: '0.78rem',
-                    padding: '6px 12px 6px 10px',
+                    fontSize: '0.8rem',
+                    padding: '8px 14px 8px 12px',
                     borderRadius: 999,
                     background:
                       'linear-gradient(135deg, var(--primary-soft) 0%, #f0d9b8 100%)',
@@ -289,14 +289,14 @@ export default function PhaseCard({ phase, isOpen, onToggle }) {
                     boxShadow: '0 1px 2px rgba(183,139,76,0.15)',
                   }}
                 >
-                  <Activity size={12} strokeWidth={2.4} />
+                  <Activity size={13} strokeWidth={2.4} />
                   {ex}
                 </span>
               ))}
             </div>
 
             <p
-              className="italic mt-4"
+              className="italic mt-5"
               style={{ fontSize: '0.78rem', color: 'var(--text-muted)', lineHeight: 1.55 }}
             >
               *Exercícios específicos dependem da técnica cirúrgica e da liberação do cirurgião e fisioterapeuta.
@@ -335,7 +335,7 @@ function SectionHeader({ icon: Icon, title, tone, count }) {
   const t = tokens[tone] || tokens.default;
 
   return (
-    <div className="flex items-center gap-2.5 mb-3">
+    <div className="flex items-center gap-2.5 mb-4">
       <span
         aria-hidden="true"
         className="shrink-0 flex items-center justify-center"
