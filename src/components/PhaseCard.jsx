@@ -335,26 +335,26 @@ function SectionHeader({ icon: Icon, title, tone, count }) {
   const t = tokens[tone] || tokens.default;
 
   return (
-    <div className="flex items-center gap-2.5 mb-4">
+    <div className="flex items-center gap-3 mb-5 mt-1">
       <span
         aria-hidden="true"
         className="shrink-0 flex items-center justify-center"
         style={{
-          width: 26,
-          height: 26,
-          borderRadius: 8,
+          width: 32,
+          height: 32,
+          borderRadius: 10,
           background: t.iconBg,
           color: t.iconColor,
-          boxShadow: '0 2px 6px rgba(0,0,0,0.08)',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
         }}
       >
-        <Icon size={14} strokeWidth={2.6} />
+        <Icon size={16} strokeWidth={2.6} />
       </span>
       <h4
         className="uppercase"
         style={{
           fontFamily: 'Poppins, Inter, sans-serif',
-          fontSize: '0.78rem',
+          fontSize: '0.85rem',
           fontWeight: 700,
           letterSpacing: '0.07em',
           color: t.color,
@@ -368,12 +368,12 @@ function SectionHeader({ icon: Icon, title, tone, count }) {
           className="font-bold"
           style={{
             fontFamily: 'Poppins, Inter, sans-serif',
-            fontSize: '0.68rem',
+            fontSize: '0.72rem',
             color: t.color,
             background: t.bg,
-            padding: '2px 8px',
+            padding: '3px 10px',
             borderRadius: 999,
-            minWidth: 22,
+            minWidth: 24,
             textAlign: 'center',
           }}
         >
